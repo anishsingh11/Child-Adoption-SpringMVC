@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- one of the properties available; the maximum file size in bytes -->
+		<property name="maxUploadSize" value="5000000" />
+	</bean>
+	
+	<bean id="animalDAO" class="com.qing.dao.AnimalDAO" ></bean>
+	<bean id="userDAO" class="com.qing.dao.UserDAO" ></bean>
+	<bean id="rescueRecordDAO" class="com.qing.dao.RescueRecordDAO" ></bean>
+	<bean id="treatmentRecordDAO" class="com.qing.dao.TreatmentRecordDAO" ></bean>
+	<bean id="adoptionRecordDAO" class="com.qing.dao.AdoptionRecordDAO" ></bean>
+	
+</beans>

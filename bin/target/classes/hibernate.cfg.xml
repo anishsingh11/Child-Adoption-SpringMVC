@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/rescuecenter</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password">muqing.1993</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+  <property name="hibernate.show_sql">true</property>
+  <mapping class="com.qing.pojo.Animal"/>
+  <mapping class="com.qing.pojo.Adopter"/>
+  <mapping class="com.qing.pojo.Employee"/>
+  <mapping class="com.qing.pojo.AdopterUserAccount"/>
+  <mapping class="com.qing.pojo.EmployeeUserAccount"/>
+  <mapping class="com.qing.pojo.RescueRecord"/>
+  <mapping class="com.qing.pojo.TreatmentRecord"/>
+  <mapping class="com.qing.pojo.AdoptionRecord"/>
+ </session-factory>
+</hibernate-configuration>
