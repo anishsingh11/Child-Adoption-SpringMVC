@@ -11,6 +11,6 @@
 8.	Authentication/Authorization
 9.	Filter/Interceptor
 
-##HOW TO RUN
+## HOW TO RUN
  1. Open using netbeans/Eclipse
  2. Change configurations in hibernate.cg.xml file
